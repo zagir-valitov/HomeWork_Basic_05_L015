@@ -1,0 +1,121 @@
+﻿// See https://aka.ms/new-console-template for more information
+using System.Runtime.CompilerServices;
+using System;
+using HomeWork_Basic_05;
+using System.Security.Cryptography;
+
+
+Console.WriteLine("Hello, World!");
+//  1)  /////////////////////////// 
+//Panda p1 = new("Panda Dee");
+//Console.WriteLine($"name: {p1.Name}, Population pands: {Panda.Population}");
+//Panda p2 = new("Panda Dah");
+//Console.WriteLine($"name: {p2.Name}, Population pands: {Panda.Population}");
+
+
+//  2)  /////////////////////////// 
+//List<Figure> figures = new();
+
+//var circles = GetCircles();
+//var rectangles = GetRectangles();
+
+//figures.AddRange(circles);
+//figures.AddRange(rectangles);
+
+//static List<Figure> GetCircles()
+//{
+//    return new List<Figure>
+//    {
+//        new Circle(10),
+//        new Circle(20)
+//    };
+//}
+//static List<Figure> GetRectangles()
+//{
+//    return new List<Figure>
+//    {
+//        new Rectangle(30, 40),
+//        new Rectangle(50, 60),
+//        new Rectangle(70, 80),
+//        new Rectangle(90, 100)
+//    };
+//}
+//foreach (var fig in figures)
+//{
+//    Console.WriteLine($"{fig.GetType().Name}: {fig.GetArea()}");
+//}
+
+//Dog belka = new();
+//belka.Speak();
+//Console.WriteLine("-----------------------------------------\n");
+
+//Calculator.Add(2, 3);
+//Calculator.Add(2, 3, 5);
+//Console.WriteLine("-----------------------------------------\n");
+
+//FigureMod figureMod = new();
+//figureMod.Draw();
+//CircleMod circleMod = new();
+//circleMod.Draw();
+//Console.WriteLine("-----------------------------------------\n");
+
+//Car ford = new();
+//ford.StartEngine();
+//ford.StopEngine();
+//Console.WriteLine("-----------------------------------------\n");
+
+//Vector vectorA = new(1, 2);
+//Vector vectorB = new(3, 4);
+//Vector vectorC = vectorA + vectorB;
+//Console.WriteLine($"Vector A: {vectorA.ToString()}");
+//Console.WriteLine($"Vector B: {vectorB.ToString()}");
+//Console.WriteLine($"Vector C: {vectorC.ToString()}");
+//Console.WriteLine("-----------------------------------------\n");
+
+//  3)  /////////////////////////// 
+//IEnumerator e = new Countdown();
+//while( e.MoveNext() )
+//    Console.Write( e.Current + " ");
+//Console.WriteLine();
+
+//e.Reset();
+//while (e.MoveNext())
+//    Console.Write(e.Current + " ");
+//Console.WriteLine("\n-----------------------------------------\n");
+
+//RichTextBox r = new RichTextBox();
+//r.Undo();
+//((IUndoable)r).Undo();
+//Console.WriteLine();
+//((IUndoable)new RichTextBox()).DisplayPi();
+
+//RichTextBox r2 = new RichTextBox();
+//((TextBox)r2).Undo();
+//Console.WriteLine("-----------------------------------------\n");
+
+//IWalkable[] persons = [new PersonMod(), new PersonMod(), new PersonMod(), new PersonMod(), new PersonMod(), new Horse()];
+////foreach(PersonMod p in persons)
+////{
+////    p.Walk();
+////}
+//foreach (IWalkable p in persons)
+//{
+//    p.Walk();
+//}
+//Console.WriteLine("-----------------------------------------\n");
+
+Quadcopter miTu = new();
+Console.WriteLine(miTu.GetInfo());
+Console.WriteLine("Quadcopter components: ");
+foreach (var component in miTu.GetComponents())
+    Console.WriteLine(component);
+Console.WriteLine(((IChargeable)miTu).GetInfo());
+miTu.Charge();
+Console.WriteLine();
+
+//Widget w = new();
+//w.Foo();
+//((I1)w).Foo();
+//((I2)w).Foo();
+
+
